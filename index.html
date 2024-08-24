@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+		<!-- 
+		
+		This file illustrates the random images when page is loaded.Images 
+		can be randomized and clickable that increases counter by 3 and 1, 
+		respectively. It also resets the time when images are clicked or randomized.
+		there is also one input field that can also reset the time which user want.
+		
+		-->
+
+	<head>
+	
+		<!-- Author: Nisarg Nayak -->
+		
+		<title>let's play</title>
+		
+		<meta charset ="UTF-8">
+		<script src="images.js"></script>
+		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial scale=1.0">
+		
+	</head>
+
+	<body>
+	
+		<header>
+			<h1 class="heading">Play with Pictures</h1>
+		</header>
+
+		<div id="pictures" class="stylepicture">
+				
+			<img src="images/natureimage1.jpg" id="pic1" class="images" alt="randomimages" onclick="doAnimation(event)" height="200" width="200">
+			<img src="images/parrotimage.jpg" id="pic2" class="images" alt="randomimages" onclick="doAnimation(event)" height="200" width="200">
+			<img src="images/pizza1.jpg" id="pic3" class="images" alt="randomimages" onclick="doAnimation(event)" height="200" width="200">
+			
+		</div>
+		
+		<label for="refresh_input">Timeout(500-10000ms)</label><br>
+		<input type="number" id="refresh_input" >
+		
+		<button id="randomize" onclick="randomizeImages()">Randomize</button>
+		
+		<p>Time until automatic refresh: &nbsp;<span id="timer"></span></p>
+		
+		<p id="text" class="textcontent"></p>
+		
+		
+		<footer>
+			&copy;Nisarg Nayak 17
+		</footer>
+		
+		
+	</body>
+		
+	
+</html>
